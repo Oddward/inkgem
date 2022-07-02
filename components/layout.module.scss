@@ -1,0 +1,92 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+  }
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 0;
+
+    :global .cover {
+        width: 100%;
+        height: 400px;
+        background: url('/images/pexels-cottonbro-6830895.jpg');
+        background-size: cover;
+        background-position: 50% 85%;
+    }
+    :global .action-buttons {
+        display: flex;
+        gap: 2rem;
+    }
+    :global article {
+        padding: 5rem; 
+    }
+}
+
+.backToHome {
+    margin: 3rem 0 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2.5rem;
+
+    :global .combomark {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    :global .links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        font-size: .8rem;
+        align-items: center;
+    }
+    :global .searchbox {
+        border: 1px solid #ddd;
+        border-radius: .75rem;
+        padding: 0 .5rem 0 1.5rem;
+
+        &:focus {
+            outline: #808080 solid 2px;
+        }
+
+        :global input[type="text"] {
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+    color: rgba($color: #fff, $alpha: .8);
+    font-size: .8rem;
+    padding: 2rem;
+
+    :global div {
+        display: flex;
+        flex-direction: column;
+    }
+    :global a {
+        color: inherit;
+    }
+    :global span {
+        color: white;
+    }
+    :global div .combomark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

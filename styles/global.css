@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #001f42;
   text-decoration: none;
 }
 
@@ -24,4 +24,30 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', SegoeScript, cursive;
+}
+
+article {
+  font-family: 'Garamond Bold', Times, serif;
+}
+
+.flex-horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-between {
+  justify-content: space-between;
 }
