@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link'
 import Date from '../components/date'
+import Author from '../components/author';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -20,12 +21,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
       <section className={utilStyles.headingMd}>
-        <p>An African raised in Asia, a melting pot of cultures and interests with most of them revolving around visual arts, natural sciences and understanding people. Usually consuming tonnes of media (especially animation), practicing web development and graphic design, gaming, and/or hanging out on a discord chat.</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <article>
+          <h2 >Unique insight & introspective</h2>
+          <p>Our authors include superheroes, top selling book authors, CEOs, celebrities and nobel prize winners among others.</p>
+        </article>
+        <div className="flex-vertical">
+          <Author name="Stephen King" title="Top selling author" />
+          <Author name="Bruce Wayne" title="CEO, Wayne Enterprises" />
+        </div>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>

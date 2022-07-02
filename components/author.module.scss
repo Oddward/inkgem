@@ -1,0 +1,16 @@
+.div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+     :global p {
+        padding: 0;
+     }
+}

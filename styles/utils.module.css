@@ -25,6 +25,10 @@
     line-height: 1.5;
 }
 
+.subheading {
+    font-size: .7em;
+}
+
 .borderCircle {
     border-radius: 9999px;
 }
