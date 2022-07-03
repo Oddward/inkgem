@@ -8,7 +8,7 @@ export default function Author({ name, title }) {
             <Avatar src="/images/pfp1.jpg" className={ styleUtils.roundedCircle } />
             <div className={ styles.info }>
                 <p>{ name }</p>
-                <p className={ styleUtils.subheading}>{ title }</p>
+                <p className={`${styleUtils.subheading} ${styleUtils.ital}`}>{ title }</p>
             </div>
         </div>
     );

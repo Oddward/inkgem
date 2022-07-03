@@ -64,13 +64,13 @@ export default function Layout({ children, home }) {
       )}
     </header>
 
-    <div className={ styles.container }>
+    <div>
 
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Inkgem is a highly curated pro blog featuring the most influential figures."
+          content="Inkgem is a highly curated blog featuring open letters from the most influential figures."
         />
         <meta
           property="og:image"

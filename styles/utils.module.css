@@ -1,10 +1,16 @@
+.container {
+    max-width: 36rem;
+    padding: 0 1rem;
+    margin: 3rem auto 6rem;
+}
+
 .heading2Xl {
     font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-  }
+}
   
 .headingXl {
     font-size: 2rem;
@@ -27,6 +33,10 @@
 
 .subheading {
     font-size: .7em;
+}
+
+.literature {
+    font-family: 'Garamond Bold', 'Times New Roman', Times, serif;
 }
 
 .borderCircle {
@@ -53,4 +63,29 @@
 
 .lightText {
     color: #666;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.thicc-padding {
+    padding: 5rem;
+}
+
+.ital {
+    font-style: italic;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }

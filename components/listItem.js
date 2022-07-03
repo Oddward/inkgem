@@ -1,17 +1,18 @@
 import Link from "next/link";
 import Avatar from "./avatar";
 import styles from "./listItem.module.scss"
+import styleUtils from '../styles/utils.module.css'
 
-export default function ListItem({ title, category, author }) {
+export default function ListItem({ title, category, author, href }) {
     return (
-        <div className={ styles.div }>
+        <div className={ `${styles.div} ${styleUtils.listItem}` }>
             <div>
-                <span>{ category }</span>
-                <Link href="/">
-                    <h2>{ title }</h2>
+                <small>{ category }</small>
+                <Link href={ href }>
+                    <h3>{ title }</h3>
                 </Link>
             </div>
-            <Avatar src={ author } />
+            <Avatar src="/images/pfp1.jpg" />
         </div>
     );
 }

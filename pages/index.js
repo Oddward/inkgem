@@ -5,6 +5,7 @@ import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link'
 import Date from '../components/date'
 import Author from '../components/author';
+import ListItem from '../components/listItem';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -22,30 +23,22 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
 
-      <section className={utilStyles.headingMd}>
-        <article>
+      <section className={`${utilStyles.headingMd} ${utilStyles['grid-2']}`}>
+        <article className={ utilStyles['thicc-padding']}>
           <h2 >Unique insight & introspective</h2>
           <p>Our authors include superheroes, top selling book authors, CEOs, celebrities and nobel prize winners among others.</p>
         </article>
-        <div className="flex-vertical">
+        <div className={`flex-vertical ${utilStyles['thicc-padding']}`}>
           <Author name="Stephen King" title="Top selling author" />
           <Author name="Bruce Wayne" title="CEO, Wayne Enterprises" />
         </div>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px} ${utilStyles.container}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
+            <ListItem href={`/posts/${id}`} title={ title } category="Psychology" />
           ))}
         </ul>
       </section>
