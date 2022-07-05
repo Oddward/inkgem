@@ -1,14 +1,14 @@
 import styles from './author.module.scss'
-import styleUtils from '../styles/utils.module.css'
+import utilStyles from '../styles/utils.module.css'
 import Avatar from './avatar';
 
-export default function Author({ name, title }) {
+export default function Author({ src, name, title }) {
     return (
         <div className={ styles.div }>
-            <Avatar src="/images/pfp1.jpg" className={ styleUtils.roundedCircle } />
-            <div className={ styles.info }>
+            <Avatar src={ src } className={ utilStyles.roundedCircle } size="200" />
+            <div className={ `${styles.info} ${utilStyles.headingLg} ${utilStyles.bold}` }>
                 <p>{ name }</p>
-                <p className={`${styleUtils.subheading} ${styleUtils.ital}`}>{ title }</p>
+                <p className={`${utilStyles.subheading} ${utilStyles.ital}`}>{ title }</p>
             </div>
         </div>
     );

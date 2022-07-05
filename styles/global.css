@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #eaccc4;
+}
+
 html,
 body {
   padding: 0;
@@ -30,6 +34,10 @@ h1, h2, h3 {
   font-family: 'Playfair Display', SegoeScript, cursive;
 }
 
+h2, h3, .date {
+  text-align: center;
+}
+
 article {
   font-family: 'Garamond Bold', Times, serif;
 }
@@ -50,4 +58,12 @@ article {
 
 .space-between {
   justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }

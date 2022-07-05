@@ -1,7 +1,7 @@
 import styleUtils from '../styles/utils.module.css'
 
-export default function Avatar({ src }) {
+export default function Avatar({ src, alt, size }) {
     return (
-        <img className={ styleUtils.borderCircle } src={ src } alt="" width="100" height="100" />
+        <img className={ styleUtils.borderCircle } src={ src } alt={ alt } width={`${size}px`} height={`${size}px`} />
     );
 }

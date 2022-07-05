@@ -1,18 +1,37 @@
+// $accent-color: #eaccc4;
+
 .div {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    border-radius: 9999px;
+    padding: 2px;
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    padding-inline-end: 100px;
+    flex-grow: 2;
+
+    :global img {
+        width: 200px;
+        height: 200px;
+        flex-grow: 2;
+    }
 }
 
 .info {
     display: flex;
     flex-direction: column;
     align-content: center;
+    line-height: 1;
+    gap: 1.2rem;
 
-     :global p {
+    :global p {
         padding: 0;
         margin: 0;
+        width: auto;
+        flex-grow: 2;
+        line-height: 1;
      }
 }

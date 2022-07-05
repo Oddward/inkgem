@@ -43,23 +43,7 @@ export default function Layout({ children, home }) {
         </>
       ) : (
         <>
-          <Link href="/">
-            <a>
-              <Image
-                priority
-                src="/images/pfp1.jpg"
-                className={ utilStyles.borderCircle }
-                height={ 108 }
-                width={ 108 }
-                alt={ name }
-              />
-            </a>
-          </Link>
-          <h2 className={ utilStyles.headingLg }>
-            <Link href="/">
-              <a className={ utilStyles.colorInherit }>{ name }</a>
-            </Link>
-          </h2>
+          
         </>
       )}
     </header>
@@ -85,15 +69,18 @@ export default function Layout({ children, home }) {
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet" />
       </Head>
 
-      <main>{children}</main>
+      <main>
+        {children}
+        {!home && (
+          <div className={ `${styles.backToHome} ${utilStyles.container}` }>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}  
+      </main>
 
-      {!home && (
-        <div className={ styles.backToHome }>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      
     </div>
 
     <footer className={ styles.footer}>

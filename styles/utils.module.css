@@ -36,7 +36,13 @@
 }
 
 .literature {
-    font-family: 'Garamond Bold', 'Times New Roman', Times, serif;
+    font-family: 'Garamond Bold', 'Garamond', 'Times New Roman', Times, serif;
+}
+
+.bio {
+    font-size: .9em;
+    line-height: initial;
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
 }
 
 .borderCircle {
@@ -72,11 +78,19 @@
 }
 
 .thicc-padding {
-    padding: 5rem;
+    padding: 4rem;
+}
+
+.soft-padding {
+    padding: 2rem;
 }
 
 .ital {
     font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .text-center {
@@ -84,8 +98,22 @@
 }
 
 .centered {
-    text-align: center;
     justify-content: center;
-    align-items: center;
     align-content: center;
+}
+
+.lineheight-tight {
+    line-height: 1;
+}
+
+.horizontal-bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-color);
+    margin: 1rem;
+}
+
+.small-avatar {
+    width: 64px !important;
+    height: 64px !important;
 }
