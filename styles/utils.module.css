@@ -77,6 +77,17 @@
     grid-template-rows: 1fr;
 }
 
+@media screen and (max-width: 900px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.flex-horizontal-wrap {
+    display: flex;
+}
+
 .thicc-padding {
     padding: 4rem;
 }

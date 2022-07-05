@@ -1,5 +1,6 @@
 ---
 title: 'On confidence, humility, and the defeatist mindset'
+subtitle: ''
 date: '2018-01-02'
 authorId: 1
 ---

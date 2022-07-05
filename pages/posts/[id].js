@@ -38,10 +38,12 @@ export default function Post({ postData, authorData }) {
           <div className={`flex-vertical ${utilStyles.centered} ${utilStyles['thicc-padding']}`}>
             <Author src={ authorData.data.src } name={ authorData.data.name } title={ authorData.data.authorTitle } />
           </div>
-          <div className={`flex-vertical ${utilStyles.centered} ${utilStyles['thicc-padding']}`}>
+
+          <div className={`flex-vertical ${utilStyles.centered} ${utilStyles['lineheight-tight']} ${utilStyles['thicc-padding']}`}>
             <h1 className={`${utilStyles['lineheight-tight']} ${utilStyles.heading2Xl}`}>{postData.title}</h1>
-            <p className={`${utilStyles['lineheight-tight']} ${utilStyles.subheading}`}>{postData.subtitle}</p>
+            <p className={`${utilStyles['lineheight-tight']} ${utilStyles.headingMd} ${utilStyles.bold}`}>{postData.subtitle}</p>
           </div>
+
           {console.log( postData, authorData )}
         </header>
 

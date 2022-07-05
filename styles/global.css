@@ -34,6 +34,12 @@ h1, h2, h3 {
   font-family: 'Playfair Display', SegoeScript, cursive;
 }
 
+@media screen and (max-width: 900px) {
+  :global h1, .heading* {
+    text-align: center;
+  }
+}
+
 h2, h3, .date {
   text-align: center;
 }
